@@ -1,6 +1,6 @@
 {
   "name": "sitemap-scan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A command-line tool to find the main sitemap, sub-sitemaps, and all content URLs for a given domain.",
   "main": "cli.js",
   "bin": {
