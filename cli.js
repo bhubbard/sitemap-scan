@@ -53,7 +53,7 @@ async function findMainSitemap(domain) {
         const sitemapUrl = `${origin}${sitemapPath}`;
         try {
             // Use a HEAD request to check for existence without downloading the body
-            await axios.head(sitemapUrl, { headers: { 'User-Agent': 'Sitemap-Finder/1.0' } });
+            await axios.head(sitemapUrl, { headers: { 'User-Agent': 'Sitemap-Scan/1.0' } });
             console.log(`✅ Found main sitemap at: ${sitemapUrl}`);
             return sitemapUrl;
         } catch (error) {
