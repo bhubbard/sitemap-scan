@@ -1,4 +1,4 @@
-# Sitemap Crawler
+# Sitemap Scan
 
 A simple and efficient command-line tool to find the main sitemap, discover all nested sub-sitemaps, and extract every content URL from a domain.
 
@@ -7,12 +7,12 @@ A simple and efficient command-line tool to find the main sitemap, discover all 
 You can install this tool globally via npm:
 
 ```bash
-npm install -g sitemap-crawler
+npm install -g sitemap-scan
 ```
 Or run it directly without installing using npx:
 
 ```bash
-npx sitemap-crawler example.com --urls
+npx sitemap-scan example.com --urls
 ```
 Usage
 The command requires a domain and an argument specifying what information to retrieve.

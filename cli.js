@@ -1,5 +1,5 @@
 /**
- * Sitemap URL Finder
+ * Sitemap Scan
  *
  * Description:
  * This script is designed to find and extract URLs from a domain's sitemap.
@@ -12,18 +12,18 @@
  * - npm packages: axios, xml2js
  *
  * How to run:
- * 1. Save this script as `sitemap-finder.js`.
+ * 1. Save this script as `sitemap-scan.js`.
  * 2. In your terminal, run: `npm install axios xml2js`
  *
  * 3. Execute the script with a domain and an argument:
  * - To get the main sitemap URL:
- * `node sitemap-finder.js example.com --main`
+ * `node sitemap-scan.js example.com --main`
  *
  * - To get all sub-sitemap URLs:
- * `node sitemap-finder.js example.com --subs`
+ * `node sitemap-scan.js example.com --subs`
  *
  * - To get all content URLs:
- * `node sitemap-finder.js example.com --urls`
+ * `node sitemap-scan.js example.com --urls`
  */
 
 const axios = require('axios');
@@ -116,7 +116,7 @@ async function main() {
 
     if (!domain || !argument) {
         console.error('❌ Please provide a domain and an argument.');
-        console.log('Usage: node sitemap-finder.js example.com [--main|--subs|--urls]');
+        console.log('Usage: node sitemap-scan.js example.com [--main|--subs|--urls]');
         process.exit(1);
     }
 
