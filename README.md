@@ -20,23 +20,23 @@ The command requires a domain and an argument specifying what information to ret
 Command Format:
 
 ```bash
-find-sitemap-urls <domain> [--main|--subs|--urls]
+sitemap-scan <domain> [--main|--subs|--urls]
 ```
 Examples
 1. Get the main sitemap URL:
 
 ```bash
-find-sitemap-urls example.com --main
+sitemap-scan example.com --main
 ```
 
 2. Get all sub-sitemap URLs:
 
 ```bash
-find-sitemap-urls example.com --subs
+sitemap-scan example.com --subs
 ```
 
 3. Get all final content URLs:
 
 ```bash
-find-sitemap-urls example.com --urls
+sitemap-scan example.com --urls
 ```
