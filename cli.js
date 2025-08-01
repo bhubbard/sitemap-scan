@@ -77,7 +77,7 @@ async function parseSitemap(sitemapUrl) {
     let contentUrls = [];
 
     try {
-        const response = await axios.get(sitemapUrl, { headers: { 'User-Agent': 'Sitemap-Finder/1.0' } });
+        const response = await axios.get(sitemapUrl, { headers: { 'User-Agent': 'Sitemap-Scan/1.0' } });
         const parser = new xml2js.Parser();
         const result = await parser.parseStringPromise(response.data);
 
